@@ -9,27 +9,27 @@ void	events_init(t_fractal *f)
 
 int	key_handler(int keycode, t_fractal *f)
 {
-	if (keycode == 0x7B)
+	if (keycode == 0x0061)
 		f->offset_x -= 0.25 * f->zoom;
-	else if (keycode == 0x7C)
+	else if (keycode == 0x0064)
 		f->offset_x += 0.25 * f->zoom;
-	else if (keycode == 0x7E)
+	else if (keycode == 0x0077)
 		f->offset_y -= 0.25 * f->zoom;
-	else if (keycode == 0x7D)
+	else if (keycode == 0x0073)
 		f->offset_y += 0.25 * f->zoom;
-	else if (keycode == 0x79)
+	else if (keycode == 0x007a)
 		f->i_max -= 25;
-	else if (keycode == 0x74)
+	else if (keycode == 0x0078)
 		f->i_max += 25;
-	else if (keycode == 0x12)
+	else if (keycode == 0x0031)
 		f->col = 0x204;
-	else if (keycode == 0x13)
+	else if (keycode == 0x0032)
 		f->col = 0xFCBE11;
-	else if (keycode == 0x14)
+	else if (keycode == 0x0033)
 		f->col = 0xE418C1;
-	else if (keycode == 0x73)
+	else if (keycode == 0x0072)
 		data_init(f);
-	else if (keycode == 0x35)
+	else if (keycode == 0xff1b)
 		close_handler(f);
 	render(f, f->func);
 	return (0);
@@ -39,9 +39,9 @@ int	mouse_handler(int button, int x, int y, t_fractal *f)
 {
 	x += 0;
 	y += 0;
-	if (button == 0x5)
+	if (button == 0x4)
 		f->zoom *= 0.9;
-	else if (button == 0x4)
+	else if (button == 0x5)
 		f->zoom *= 1.1;
 	render(f, f->func);
 	return (0);
