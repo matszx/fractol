@@ -2,16 +2,16 @@
 
 #include <stdlib.h>
 #include <unistd.h>
-#include <math.h>
 #include <mlx.h>
+#include <math.h>
 
-#define SIZE   800
+#define ARG_ERR	"\x1b[91m Invalid argument:\x1b[0m\n\
+  mandelbrot\t-> \x1b[3mm\x1b[0m\n\
+  julia\t\t-> \x1b[3mj <r> <i>\x1b[0m\n\
+  burning ship\t-> \x1b[3mb\x1b[0m\n"
+#define MEM_ERR	"\x1b[91m Memory error\x1b[0m\n"
 
-#define ARG_ERR    "Invalid argument:\n\
- >  [m]andelbrot\n\
- >  [j]ulia <real> <imaginary>\n\
- >  [b]urningship\n"
-#define MEM_ERR    "Memory error\n"
+#define SIZE	600
 
 typedef struct s_complex
 {

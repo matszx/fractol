@@ -1,6 +1,6 @@
 NAME 			=	fractol
 CC 				=	gcc
-CFLAGS 			=	-Wall -Wextra -Werror -I/usr/include -Imlx
+CFLAGS 			=	-Wall -Wextra -Werror -ffast-math -I/usr/include -Imlx
 MLX				=	-Lmlx -lmlx -L/usr/lib/X11 -lX11 -lXext
 
 SRC_FILES 		=	main.c \
@@ -25,7 +25,7 @@ $(OBJ_DIR)		:
 
 $(NAME)			:	$(OBJ)
 					@make -C mlx
-					$(CC) $(CFLAGS) $(OBJ) $(MLX) -o $(NAME)
+					$(CC) $(CFLAGS) $(OBJ) -o $(NAME) $(MLX)
 
 clean			:
 					@make clean -C mlx

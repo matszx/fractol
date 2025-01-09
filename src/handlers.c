@@ -4,30 +4,30 @@ void	events_init(t_fractal *f)
 {
 	mlx_key_hook(f->mlx_win, key_handler, f);
 	mlx_mouse_hook(f->mlx_win, mouse_handler, f);
-	mlx_hook(f->mlx_win, 17, 0, close_handler, f);
+	mlx_hook(f->mlx_win, 17, 1L << 0, close_handler, f);
 }
 
 int	key_handler(int keycode, t_fractal *f)
 {
-	if (keycode == 0x0061)
+	if (keycode == 0x61)
 		f->offset_x -= 0.25 * f->zoom;
-	else if (keycode == 0x0064)
+	else if (keycode == 0x64)
 		f->offset_x += 0.25 * f->zoom;
-	else if (keycode == 0x0077)
+	else if (keycode == 0x77)
 		f->offset_y -= 0.25 * f->zoom;
-	else if (keycode == 0x0073)
+	else if (keycode == 0x73)
 		f->offset_y += 0.25 * f->zoom;
-	else if (keycode == 0x007a)
+	else if (keycode == 0x7a)
 		f->i_max -= 25;
-	else if (keycode == 0x0078)
+	else if (keycode == 0x78)
 		f->i_max += 25;
-	else if (keycode == 0x0031)
+	else if (keycode == 0x31)
 		f->col = 0x204;
-	else if (keycode == 0x0032)
+	else if (keycode == 0x32)
 		f->col = 0xFCBE11;
-	else if (keycode == 0x0033)
+	else if (keycode == 0x33)
 		f->col = 0xE418C1;
-	else if (keycode == 0x0072)
+	else if (keycode == 0x72)
 		data_init(f);
 	else if (keycode == 0xff1b)
 		close_handler(f);
