@@ -1,6 +1,6 @@
 NAME 			=	fractol
 CC 				=	gcc
-CFLAGS 			=	-Wall -Wextra -Werror -O3 -I/usr/include -Imlx
+CFLAGS 			=	-Wall -Wextra -Werror -I/usr/include -Imlx
 MLX				=	-Lmlx -lmlx -L/usr/lib/X11 -lX11 -lXext
 
 SRC_FILES 		=	main.c \
