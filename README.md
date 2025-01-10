@@ -4,14 +4,21 @@
 ![Screenshot](https://i.imgur.com/A9mhp9j.png)
 
 </div>
-Simple fractal rendering. Written in C with minilibX.
+Simple fractal rendering.
 
-## Compiling and running
-* Dependencies
+Written in C with minilibX. Runs on linux and freeBSD.
+
+## Dependencies
 ```
 sudo apt update && sudo apt install gcc make xorg libxext-dev libbsd-dev
 ```
-* Compiling
+
+## Fractals
+Mandelbrot
 ```
-make
+./fractol m
+```
+Julia
+```
+./fractol j <r> <i>
 ```
