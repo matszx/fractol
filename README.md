@@ -20,7 +20,7 @@ Written in C with minilibX. Runs on linux and freeBSD.
 
 ### Running
 	./fractol <fractal name>
-Add ***r*** and ***i*** values for the Julia set.
+Add **r** and **i** values for the Julia set.
 
 ### Controls
 | Key | Description | Key | Description |
