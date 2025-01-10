@@ -1,10 +1,5 @@
-# fractol
-<div style="text-align: center;">
-
+# fractol - Simple fractal rendering
 ![Screenshot](https://i.imgur.com/A9mhp9j.png)
-
-</div>
-Simple fractal rendering.
 
 Written in C with minilibX. Runs on linux and freeBSD.
 
