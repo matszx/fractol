@@ -1,19 +1,29 @@
-# fractol - Simple fractal rendering
+# fractol
+# Simple fractal rendering
 ![Screenshot](https://i.imgur.com/A9mhp9j.png)
 
 Written in C with minilibX. Runs on linux and freeBSD.
+
+### Supported fractals
+* Mandelbrot
+* Julia
+* Burning ship
 
 ## Dependencies
 ```
 sudo apt update && sudo apt install gcc make xorg libxext-dev libbsd-dev
 ```
 
-## Fractals
-Mandelbrot
+## How to use
+To compile:
 ```
-./fractol m
+make
 ```
-Julia
+To run:
 ```
-./fractol j <r> <i>
+./fractol <fractal name>
+```
+For the Julia set:
+```
+./fractol julia <r> <i>
 ```
