@@ -2,8 +2,9 @@
 <div style="text-align: center;">
 
 ![Screenshot](https://i.imgur.com/A9mhp9j.png)
+
 </div>
-Simple fractal renderer. Written in C and using minilibX.
+Simple fractal rendering. Written in C with minilibX.
 
 ## Compiling and running
 * Dependencies
