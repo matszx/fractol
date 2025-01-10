@@ -1,6 +1,7 @@
 # fractol
-# Simple fractal rendering
 ![Screenshot](https://i.imgur.com/A9mhp9j.png)
+
+Simple fractal rendering.
 
 Written in C with minilibX. Runs on linux and freeBSD.
 
@@ -9,21 +10,21 @@ Written in C with minilibX. Runs on linux and freeBSD.
 * Julia
 * Burning ship
 
-## Dependencies
-```
-sudo apt update && sudo apt install gcc make xorg libxext-dev libbsd-dev
-```
-
 ## How to use
-To compile:
-```
-make
-```
-To run:
-```
-./fractol <fractal name>
-```
-For the Julia set:
-```
-./fractol julia <r> <i>
-```
+
+### Dependencies (Debian)
+	sudo apt update && sudo apt install gcc make xorg libxext-dev libbsd-dev
+
+### Compiling
+	make
+
+### Running
+	./fractol <fractal name>
+Add ***r*** and ***i*** values for the Julia set.
+
+### Controls
+| Key | Description | Key | Description |
+|:---:| ----------- |:---:| ----------- |
+| WASD | move the view | Z | decrease precision |
+| scroll wheel | zoom in/out | X | increase precision |
+| 1-3 | change color scheme | R | reset window |

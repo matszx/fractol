@@ -6,7 +6,7 @@ void	data_init(t_fractal *f)
 	f->offset_x = 0;
 	f->offset_y = 0;
 	f->zoom = 1.0;
-	f->col = 0x204;
+	f->col = 0x200;
 }
 
 void	mandelbrot(int x, int y, t_fractal *f)
