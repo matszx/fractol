@@ -8,10 +8,10 @@ Simple fractal rendering. Written in C with minilibX.
 
 ## Compiling and running
 * Dependencies
-´´´
+```
 sudo apt update && sudo apt install gcc make xorg libxext-dev libbsd-dev
-´´´
+```
 * Compiling
-´´´
+```
 make
-´´´
+```
