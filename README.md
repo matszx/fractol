@@ -1,1 +1,1 @@
-# fractol
+# fractol [made-with-c]
