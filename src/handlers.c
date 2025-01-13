@@ -22,11 +22,11 @@ int	key_handler(int keycode, t_fractal *f)
 	else if (keycode == 0x78)
 		f->i_max += 25;
 	else if (keycode == 0x31)
-		f->col = 0x204;
+		f->colour = 0x200;
 	else if (keycode == 0x32)
-		f->col = 0xFCBE11;
+		f->colour = 0xFCBE11;
 	else if (keycode == 0x33)
-		f->col = 0xE418C1;
+		f->colour = 0xE418C1;
 	else if (keycode == 0x72)
 		data_init(f);
 	else if (keycode == 0xff1b)

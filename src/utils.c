@@ -1,11 +1,11 @@
 #include "../inc/fractol.h"
 
-void	ft_pxl_put(t_img *img, int x, int y, int col)
+void	ft_pxl_put(t_img *img, int x, int y, int colour)
 {
 	int	offset;
 
 	offset = (x * img->bpp / 8) + (y * img->line_len);
-	*((unsigned int *)(offset + img->pxl_ptr)) = col; 
+	*((unsigned int *)(offset + img->pxl_ptr)) = colour; 
 }
 
 void	ft_putstr_fd(char *s, int fd)

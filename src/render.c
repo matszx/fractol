@@ -6,7 +6,7 @@ void	data_init(t_fractal *f)
 	f->offset_x = 0;
 	f->offset_y = 0;
 	f->zoom = 1.0;
-	f->col = 0x200;
+	f->colour = 0x200;
 }
 
 void	mandelbrot(int x, int y, t_fractal *f)
@@ -14,7 +14,7 @@ void	mandelbrot(int x, int y, t_fractal *f)
 	t_complex	z;
 	t_complex	c;
 	int			iter;
-	int			col;
+	int			colour;
 
 	z.r = 0.0;
 	z.i = 0.0;
@@ -26,8 +26,8 @@ void	mandelbrot(int x, int y, t_fractal *f)
 		z = ft_sum(ft_sq(z), c);
 		if ((z.r * z.r) + (z.i * z.i) > 4.0)
 		{
-			col = iter * f->col;
-			ft_pxl_put(&f->img, x, y, col);
+			colour = iter * f->colour;
+			ft_pxl_put(&f->img, x, y, colour);
 			return ;
 		}
 	}
@@ -39,7 +39,7 @@ void	julia(int x, int y, t_fractal *f)
 	t_complex	z;
 	t_complex	c;
 	int			iter;
-	int			col;
+	int			colour;
 
 	z.r = ft_interp(x, f->offset_x, f->zoom);
 	z.i = ft_interp(y, f->offset_y, f->zoom);
@@ -51,8 +51,8 @@ void	julia(int x, int y, t_fractal *f)
 		z = ft_sum(ft_sq(z), c);
 		if ((z.r * z.r) + (z.i * z.i) > 4.0)
 		{
-			col = iter * f->col;
-			ft_pxl_put(&f->img, x, y, col);
+			colour = iter * f->colour;
+			ft_pxl_put(&f->img, x, y, colour);
 			return ;
 		}
 	}
@@ -64,7 +64,7 @@ void	burningship(int x, int y, t_fractal *f)
 	t_complex	z;
 	t_complex	c;
 	int			iter;
-	int			col;
+	int			colour;
 
 	z.r = 0.0;
 	z.i = 0.0;
@@ -78,8 +78,8 @@ void	burningship(int x, int y, t_fractal *f)
 		z = ft_sum(ft_sq(z), c);
 		if ((z.r * z.r) + (z.i * z.i) > 4.0)
 		{
-			col = iter * f->col;
-			ft_pxl_put(&f->img, x, y, col);
+			colour = iter * f->colour;
+			ft_pxl_put(&f->img, x, y, colour);
 			return ;
 		}
 	}

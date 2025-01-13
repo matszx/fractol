@@ -3,7 +3,7 @@
 
 Simple fractal rendering.
 
-Written in C with minilibX. Runs on linux and freeBSD.
+Written in C with minilibX.
 
 ### Supported fractals
 * Mandelbrot
@@ -11,20 +11,18 @@ Written in C with minilibX. Runs on linux and freeBSD.
 * Burning ship
 
 ## How to use
+Runs on linux and freeBSD.
 
 ### Dependencies (Debian)
 	sudo apt update && sudo apt install gcc make xorg libxext-dev libbsd-dev
 
-### Compiling
+### Compiling & running
 	make
-
-### Running
-	./fractol <fractal name>
-Add **r** and **i** values for the Julia set.
+	./fractol <arg>
 
 ### Controls
 | Key | Description | Key | Description |
 |:---:| ----------- |:---:| ----------- |
-| WASD | move the view | Z | decrease precision |
-| scroll wheel | zoom in/out | X | increase precision |
-| 1-3 | change color scheme | R | reset window |
+| WASD | move the view | Z | precision - |
+| scroll | zoom | X | precision + |
+| 1-3 | colour schemes | R | reset |

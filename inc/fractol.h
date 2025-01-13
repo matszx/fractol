@@ -42,7 +42,7 @@ typedef struct s_fractal
 	double	offset_x;
 	double	offset_y;
 	double	zoom;
-	int		col;
+	int		colour;
 }	t_fractal;
 
 // main.c
@@ -68,6 +68,6 @@ int			close_handler(t_fractal *f);
 int			error_handler(t_fractal *f);
 
 // utils.c
-void		ft_pxl_put(t_img *img, int x, int y, int col);
+void		ft_pxl_put(t_img *img, int x, int y, int colour);
 void		ft_putstr_fd(char *s, int fd);
 double		ft_atof(const char *s);
