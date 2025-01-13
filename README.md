@@ -23,6 +23,6 @@ Runs on linux and freeBSD.
 ### Controls
 | Key | Description | Key | Description |
 |:---:| ----------- |:---:| ----------- |
-| WASD | move the view | scroll | zoom |
+| WASD | move the view | SCROLL | zoom |
 | 1-3 | colour scheme | R | reset |
 | Z | precision - | X | precision + |
